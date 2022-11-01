@@ -1,0 +1,13 @@
+Вивести дані про клієнта з найновішою машиною
+
+
+SELECT *
+FROM clients
+WHERE id IN(
+        SELECT client_id
+        FROM cars
+        WHERE yearOfProduction in(
+                SELECT max(yearOfProduction)
+                FROM cars
+                )
+            )

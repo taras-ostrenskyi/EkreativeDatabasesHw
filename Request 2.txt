@@ -1,0 +1,6 @@
+Вибрати усіх клієнтів, які народилися між 2000 і 2010 роками
+
+
+SELECT *
+FROM clients
+WHERE yearOfBirth >= 2000 AND yearOfBirth <= 2010

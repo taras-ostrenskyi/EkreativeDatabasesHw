@@ -1,0 +1,9 @@
+Вибрати імʼя самого старшого клієнта
+
+
+SELECT name
+FROM clients
+WHERE yearOfBirth IN(
+        SELECT min(yearOfBirth)
+        FROM clients
+        );

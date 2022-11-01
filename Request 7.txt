@@ -1,0 +1,6 @@
+Показати кількість авто у клієнта з id = 1
+
+
+SELECT COUNT(*)
+FROM cars
+WHERE client_id = 1;

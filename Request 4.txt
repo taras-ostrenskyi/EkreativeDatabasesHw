@@ -1,0 +1,6 @@
+Вибрати усі машини клієнта з id = 1
+
+
+SELECT *
+FROM cars
+WHERE client_id = 1;

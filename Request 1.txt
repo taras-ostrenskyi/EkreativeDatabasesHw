@@ -1,0 +1,6 @@
+Вибрати усіх клієнтів, в яких є буква “v” в імені
+
+
+SELECT *
+FROM clients
+WHERE name LIKE "%v%"

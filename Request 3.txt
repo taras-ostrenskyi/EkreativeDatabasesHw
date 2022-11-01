@@ -1,0 +1,6 @@
+Вибрати усі машини виробника Audi
+
+
+SELECT *
+FROM cars
+WHERE manufacturer = "audi";

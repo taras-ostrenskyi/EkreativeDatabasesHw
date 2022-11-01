@@ -1,0 +1,11 @@
+Вивести дані про клієнта з найновішою машиною
+
+
+SELECT clients.*
+FROM clients
+JOIN cars
+    ON clients.id = cars.client_id
+WHERE cars.yearOfProduction in(
+        SELECT max(cars.yearOfProduction)
+        FROM cars
+        )
